@@ -1,0 +1,155 @@
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/src/fa.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:06:44 on Aug 17,2024
+# vcom -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/src/fa.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FA
+# -- Compiling architecture BEHAVIORAL of FA
+# -- Compiling configuration CFG_FA_BEHAVIORAL
+# -- Loading entity FA
+# -- Loading architecture BEHAVIORAL of FA
+# End time: 17:06:44 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/src/GENERIC_RCA.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:06:48 on Aug 17,2024
+# vcom -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/src/GENERIC_RCA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RCA_generic
+# -- Compiling architecture BEHAVIORAL of RCA_generic
+# End time: 17:06:48 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_wrap.sv
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:06:58 on Aug 17,2024
+# vlog -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_wrap.sv 
+# -- Compiling module rca_wrap
+# 
+# Top level modules:
+# 	rca_wrap
+# End time: 17:06:58 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_if.sv
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:07:01 on Aug 17,2024
+# vlog -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_if.sv 
+# -- Compiling interface rca_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 17:07:01 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_if_sva.svh
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:07:03 on Aug 17,2024
+# vlog -reportprogress 300 -work work /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_if_sva.svh 
+# ** Error: /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_if_sva.svh(24): (vlog-2730) Undefined variable: 'N'.
+# ** Error: (vlog-13069) /home/socv-2425-4/Desktop/Part1/RCA/tb/rca_if_sva.svh(25): near "always_comb": syntax error, unexpected "SystemVerilog keyword 'always_comb'", expecting class.
+# End time: 17:07:03 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -F compile_vhd.f
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:07:31 on Aug 17,2024
+# vcom -reportprogress 300 -F compile_vhd.f 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FA
+# -- Compiling architecture BEHAVIORAL of FA
+# -- Compiling configuration CFG_FA_BEHAVIORAL
+# -- Loading entity FA
+# -- Loading architecture BEHAVIORAL of FA
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RCA_generic
+# -- Compiling architecture BEHAVIORAL of RCA_generic
+# End time: 17:07:31 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -F compile_sv.f
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:07:41 on Aug 17,2024
+# vlog -reportprogress 300 -F compile_sv.f 
+# -- Compiling interface rca_if
+# -- Compiling package rca_tb_sv_unit
+# -- Compiling module rca_tb
+# -- Compiling module rca_wrap
+# 
+# Top level modules:
+# 	rca_tb
+# End time: 17:07:41 on Aug 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -c -sv_seed random -do sim.do rca_tb
+# vsim -c -sv_seed random -do "sim.do" rca_tb 
+# Start time: 17:08:18 on Aug 17,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.rca_tb_sv_unit(fast)
+# Loading work.rca_tb(fast)
+# Loading work.rca_wrap(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rca_generic(behavioral)#1
+# Loading work.rca_if(fast)
+# Sv_Seed = 771195055
+# do sim.do
+# ** Warning: (vsim-8474) A lower value '-1' is found in bin 'corner' of Coverpoint 'a_cp'. It is invalid and will be ignored.
+#    Time: 0 ns  Iteration: 0  Process: /rca_tb/#INITIAL#38 File: ../tb/rca_cov.svh Line: 25
+# ** Warning: (vsim-8474) A lower value '-1' is found in bin 'corner' of Coverpoint 'b_cp'. It is invalid and will be ignored.
+#    Time: 0 ns  Iteration: 0  Process: /rca_tb/#INITIAL#38 File: ../tb/rca_cov.svh Line: 29
+# [CONFIG] Number of test cycles set to 10
+# 
+# TEST #1 - Launching rca quiet test...
+# expected: 520e5c23, actual: 520e5c23
+# expected: 28ab1edc, actual: 28ab1edc
+# expected: d5cef5c6, actual: d5cef5c6
+# expected: 45324d54, actual: 45324d54
+# expected: 182fafa, actual: 182fafa
+# expected: b57e398, actual: b57e398
+# expected: 37e1a582, actual: 37e1a582
+# expected: e4190a99, actual: e4190a99
+# expected: 9cd6f2a4, actual: 9cd6f2a4
+# expected: 8ac97e23, actual: 8ac97e23
+# TEST #1 - Test completed!
+# TEST #1 - Functional coverage: 33.33%
+# 
+# TEST #2 - Launching rca verbose test...
+# [    145] | a: 00111110011100100100111000100010 (1047678498) | b: 00111010000100010100111001011100 ( 974212700) | res: 01111000100000111001110001111110 (2021891198)
+# [    155] | a: 01111011000100000111010111011100 (2064676316) | b: 11000000110001011000100110001011 (3234171275) | res: 00111011110101011111111101101000 (1003880296)
+# [    165] | a: 10101110000111010010011010001000 (2921145992) | b: 01101111011101101100001010011101 (1870054045) | res: 00011101100100111110100100100110 ( 496232742)
+# [    175] | a: 01100101100110101110111111111111 (1704652799) | b: 01111000000010100000101011110001 (2013924081) | res: 11011101101001001111101011110001 (3718576881)
+# [    185] | a: 10111000110111100100110110100111 (3101576615) | b: 10100011100010100001101110011111 (2743737247) | res: 01011100011010000110100101000110 (1550346566)
+# [    195] | a: 00001101011101010101011101001011 ( 225793867) | b: 11110110011101110110010011000101 (4135019717) | res: 00000011111011001011110000010001 (  65846289)
+# [    205] | a: 10110001111011010100111111000001 (2985119681) | b: 00000000010000000110011110111110 (   4220862) | res: 10110010001011011011011110000000 (2989340544)
+# [    215] | a: 11101001100011000010101011101101 (3918277357) | b: 00011110010100100111101001010101 ( 508721749) | res: 00000111110111101010010101000010 ( 132031810)
+# [    225] | a: 01000000001101011011101110010000 (1077263248) | b: 00100111111011100000011000001011 ( 669910539) | res: 01101000001000111100000110011100 (1747173788)
+# [    235] | a: 01000000001101011011101110010000 (1077263248) | b: 00100111111011100000011000001011 ( 669910539) | res: 01101000001000111100000110011100 (1747173788)
+# TEST #2 - Test completed!
+# TEST #2 - Functional coverage: 33.33%
+# 
+# TOTAL FUNCTIONAL COVERAGE: 33.33%
+# 
+### TEST PASSED!
+# 
+# ** Note: $stop    : ../tb/rca_tb.sv(75)
+#    Time: 245 ns  Iteration: 1  Instance: /rca_tb
+# Break at ../tb/rca_tb.sv line 75

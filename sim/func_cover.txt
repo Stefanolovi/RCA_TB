@@ -1,0 +1,31 @@
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /rca_tb_sv_unit/rca_cov/rca_cov__1/rca_cg        33.33%        100          -    Uncovered            
+    covered/total bins:                                     2          6          -                      
+    missing/total bins:                                     4          6          -                      
+    % Hit:                                             33.33%        100          -                      
+    Coverpoint a_cp                                     0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin corner[0]                                       0          1          -    ZERO                 
+        bin corner[2147483647]                              0          1          -    ZERO                 
+        default bin others                                 20                     -    Occurred             
+    Coverpoint b_cp                                     0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin corner[0]                                       0          1          -    ZERO                 
+        bin corner[2147483647]                              0          1          -    ZERO                 
+        default bin others                                 20                     -    Occurred             
+    Coverpoint Ci_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero[0]                                         8          1          -    Covered              
+        bin uno[1]                                         12          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 33.33%  COVERGROUP TYPES: 1
